@@ -29,4 +29,6 @@ void Name_Buddy();
 
 void Thats_Odd();
 
+void No_Numerals();
+
 #endif // !EXERCICES_H_

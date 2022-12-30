@@ -260,3 +260,60 @@ void Thats_Odd() {
 	printf("%d", sum_even_numbers);
 
 }
+
+void No_Numerals() {
+	char sentence[100];
+	gets(sentence);
+	char no_numerals[100] = "";
+	char char_check;
+	int i;
+
+	for (i = 0; i < strlen(sentence); i++) {
+		char_check = sentence[i];
+		//printf("%d\n", sentence[i]);
+		if (char_check < 48 || char_check > 57) {
+			strncat(no_numerals, &char_check, sizeof(char));
+		}
+		else if (sentence[i] + sentence[i + 1] == 97) {
+			strcat(no_numerals, "ten");
+			i++;
+		}
+		else {
+			switch (char_check) {
+			case 48:
+				strcat(no_numerals, "zero");
+				break;
+			case 49:
+				strcat(no_numerals, "one");
+				break;
+			case 50:
+				strcat(no_numerals, "two");
+				break;
+			case 51:
+				strcat(no_numerals, "three");
+				break;
+			case 52:
+				strcat(no_numerals, "four");
+				break;
+			case 53:
+				strcat(no_numerals, "five");
+				break;
+			case 54:
+				strcat(no_numerals, "six");
+				break;
+			case 55:
+				strcat(no_numerals, "seven");
+				break;
+			case 56:
+				strcat(no_numerals, "eight");
+				break;
+			case 57:
+				strcat(no_numerals, "nine");
+				break;
+			}
+		}
+	}
+
+	printf("%s", no_numerals);
+	return EXIT_SUCCESS;
+}

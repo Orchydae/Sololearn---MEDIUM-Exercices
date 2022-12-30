@@ -1,2 +1,4 @@
 ﻿  source.c
+D:\Microsoft Visual Studio 2022\source\repos\SOLOLEARN - MEDIUM\Project2\source.c(10,6): warning C4013: 'gets' undefined; assuming extern returning int
+D:\Microsoft Visual Studio 2022\source\repos\SOLOLEARN - MEDIUM\Project2\source.c(15,16): warning C4018: '<': signed/unsigned mismatch
   Project2.vcxproj -> D:\Microsoft Visual Studio 2022\source\repos\SOLOLEARN - MEDIUM\Debug\MEDIUM.exe
