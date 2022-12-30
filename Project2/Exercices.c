@@ -317,3 +317,23 @@ void No_Numerals() {
 	printf("%s", no_numerals);
 	return EXIT_SUCCESS;
 }
+
+void Secret_Message() {
+	char message[100];
+	fgets(message, 100, stdin);
+	char secret_message[100] = "";
+	char letter_checker;
+	char backward_version_letter;
+	int i;
+
+	for (i = 0; i < strlen(message); i++) {
+		letter_checker = tolower(message[i]);
+		if (letter_checker >= 97 && letter_checker <= 122) {
+			backward_version_letter = (letter_checker + 26 - 123 - 122) * -1;
+			printf("%c", backward_version_letter);
+		}
+		else
+			printf("%c", letter_checker);
+
+	}
+}

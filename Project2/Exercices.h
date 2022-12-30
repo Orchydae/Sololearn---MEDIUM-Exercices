@@ -31,4 +31,6 @@ void Thats_Odd();
 
 void No_Numerals();
 
+void Secret_Message();
+
 #endif // !EXERCICES_H_
